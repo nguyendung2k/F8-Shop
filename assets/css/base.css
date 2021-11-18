@@ -222,3 +222,39 @@ html {
 .select-input__item {
   margin-bottom: 4px;
 }
+
+/* ------------------Pagination---------------------- */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.pagination-item--active .pagination-item__link {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+  background-color: #fd9b87;
+  cursor: pointer;
+}
+.pagination-item {
+  margin: 0 10px;
+}
+.pagination-item__link {
+  --height: 30px;
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #939393;
+  min-width: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 2px;
+}
