@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobe-Shop</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/fonts/fontawesome-free-5.14.0-web/css/all.min.css">
@@ -15,7 +18,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <nav class="header__navbar">
+        <div class="grid wide">
+            <nav class="header__navbar hide-on-mobile-tablet">
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
                         Vào cửa hàng trên ứng dụng Sobe-Shop
@@ -26,8 +30,9 @@
                                 <a href="" class="header__qr-link">
                                     <img src="./assets/css/img/google_play.png" alt="Google Play" class="header__qr-download-img">
                                 </a>
-                                <a href="" class="header__qr-link"> <img src="./assets/css/img/app_store.png" alt="App Store" class="header__qr-download-img"></a>
-
+                                <a href="" class="header__qr-link"> <img src="./assets/css/img/app_store.png" alt="App Store"
+                                        class="header__qr-download-img"></a>
+            
                             </div>
                         </div>
                     </li>
@@ -40,7 +45,7 @@
                             <i class="header__navbar-icon fab fa-instagram"></i>
                         </a>
                     </li>
-
+            
                 </ul>
                 <ul class="header__navbar-list">
                     <li class="header__navbar-item header__navbar-item--has-notify">
@@ -53,41 +58,52 @@
                             <ul class="header__notify-list">
                                 <li class="header__notify-item header__notify-item--viewed">
                                     <a href="" class="header__notify-link">
-                                        <img src="https://d1ozsoeh4648m4.cloudfront.net/450/774/576/-29996968-1tfd7tc-gpggmmc5d0og3a0/original/image.jpg" alt="" class="header__notify-img">
+                                        <img src="https://d1ozsoeh4648m4.cloudfront.net/450/774/576/-29996968-1tfd7tc-gpggmmc5d0og3a0/original/image.jpg"
+                                            alt="" class="header__notify-img">
                                         <div class="header__notify-info">
                                             <span class="header__notify-name">
-                                                    Mỹ phẩm Ohui chính hãng
-                                                </span>
+                                                Mỹ phẩm Ohui chính hãng
+                                            </span>
                                             <span class="header__notify-description">
-                                                    Chỉ với 3 phút cho 1 ngày tỏa sáng của các bạn vậy thì còn gì phải lăn tăn mà ko sắm cho mình 1 em ấy các bạn nhỉ? Phấn Ultimate Cover CC Cushion OHUI phiên bản mới nhất với thiết kế vô cùng sang trọng
-                                                    O HUI Ultimate Cover Cushion
-                                                </span>
+                                                Chỉ với 3 phút cho 1 ngày tỏa sáng của các bạn vậy thì còn gì phải lăn tăn mà ko sắm
+                                                cho mình 1 em ấy các bạn nhỉ? Phấn Ultimate Cover CC Cushion OHUI phiên bản mới nhất
+                                                với thiết kế vô cùng sang trọng
+                                                O HUI Ultimate Cover Cushion
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="header__notify-item">
                                     <a href="" class="header__notify-link">
-                                        <img src="https://d1ozsoeh4648m4.cloudfront.net/450/774/576/-29996968-1tfd7tc-gpggmmc5d0og3a0/original/image.jpg" alt="" class="header__notify-img">
+                                        <img src="https://d1ozsoeh4648m4.cloudfront.net/450/774/576/-29996968-1tfd7tc-gpggmmc5d0og3a0/original/image.jpg"
+                                            alt="" class="header__notify-img">
                                         <div class="header__notify-info">
                                             <span class="header__notify-name">
-                                                    Phấn Phủ Innisfree No-Sebum Mineral Powder
-                                                </span>
+                                                Phấn Phủ Innisfree No-Sebum Mineral Powder
+                                            </span>
                                             <span class="header__notify-description">
-                                                    NNISFREE – một thương hiệu mỹ phẩm Hàn Quốc hoàn toàn tự nhiên, mang đên cho người sử dụng những cảm nhận về sự tinh khiết, trong lành… Innisfree là tên một địa danh tại đất nước Hàn Quốc
-                                                </span>
+                                                NNISFREE – một thương hiệu mỹ phẩm Hàn Quốc hoàn toàn tự nhiên, mang đên cho người
+                                                sử dụng những cảm nhận về sự tinh khiết, trong lành… Innisfree là tên một địa danh
+                                                tại đất nước Hàn Quốc
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
                                 <li class="header__notify-item">
                                     <a href="" class="header__notify-link">
-                                        <img src="https://d1ozsoeh4648m4.cloudfront.net/450/774/576/-29996968-1tfd7tc-gpggmmc5d0og3a0/original/image.jpg" alt="" class="header__notify-img">
+                                        <img src="https://d1ozsoeh4648m4.cloudfront.net/450/774/576/-29996968-1tfd7tc-gpggmmc5d0og3a0/original/image.jpg"
+                                            alt="" class="header__notify-img">
                                         <div class="header__notify-info">
                                             <span class="header__notify-name">
-                                                    Serum Dưỡng Dài Mi Revitalash Advanced Eyelash Conditioner 3.5ml Mẫu Mới Nhất Của Mỹ
-                                                </span>
+                                                Serum Dưỡng Dài Mi Revitalash Advanced Eyelash Conditioner 3.5ml Mẫu Mới Nhất Của Mỹ
+                                            </span>
                                             <span class="header__notify-description">
-                                                    Sản phẩm Serum Mọc Dài Lông Mi Revitalash Advanced Chính Hãng USA 3,5ml là một trong những sự lựa chọn hàng đầu của chị em yêu thích làm đẹp. Sản phẩm được ưa chuộng khắp thế giới bởi những công dụng mà nó mang lại. Hãy cùng Cửa Hàng Làm Đẹp đi sâu vào tìm hiểu một cách chi tiết nhất sản phẩm đang rất hot trên thị trường hiện nay này
-                                                </span>
+                                                Sản phẩm Serum Mọc Dài Lông Mi Revitalash Advanced Chính Hãng USA 3,5ml là một trong
+                                                những sự lựa chọn hàng đầu của chị em yêu thích làm đẹp. Sản phẩm được ưa chuộng
+                                                khắp thế giới bởi những công dụng mà nó mang lại. Hãy cùng Cửa Hàng Làm Đẹp đi sâu
+                                                vào tìm hiểu một cách chi tiết nhất sản phẩm đang rất hot trên thị trường hiện nay
+                                                này
+                                            </span>
                                         </div>
                                     </a>
                                 </li>
@@ -102,12 +118,12 @@
                             <i class="header__navbar-icon fas fa-question-circle"></i> Trợ giúp</a>
                     </li>
                     <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                    <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                                <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
                     <li class="header__navbar-item header__navbar-user">
-                        <img src="https://cdn.dribbble.com/users/3293507/screenshots/14667603/media/d8cbe035a61f64afdf6deabca5182842.jpg" alt=""
-                            class="header__navbar-user-img">
+                        <img src="https://cdn.dribbble.com/users/3293507/screenshots/14667603/media/d8cbe035a61f64afdf6deabca5182842.jpg"
+                            alt="" class="header__navbar-user-img">
                         <span class="header__navbar-user-name">Nguyen Dung</span>
-
+            
                         <ul class="header__navbar-user-menu">
                             <li class="header__navbar-user-item">
                                 <a href="">Tài khoản của tôi</a>
@@ -127,7 +143,10 @@
             </nav>
             <!-- Header with search -->
             <div class="header-with-search">
-                <div class="header__logo">
+                <label for="mobile-search-checkbox" class="header__mobile-search">
+                    <i class="header__mobile-search-icon fas fa-search"></i>
+                </label>
+                <div class="header__logo hide-on-tablet">
                     <a href="/" class="header__logo-link">
                         <svg viewBox="0 0 192 65" class="header__logo-img">
                             <g fill-rule="evenodd">
@@ -138,7 +157,8 @@
                         </svg>
                     </a>
                 </div>
-                <div class="header__search">
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+                <div class="header__search ">
                     <div class="header__search-input-wrap">
                         <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
                         <!-- Search History -->
@@ -155,11 +175,11 @@
                     </div>
                     <div class="header__search-select">
                         <span class="header__search-select-label">Trong shop
-                                    <i class="header__search-select-label-icon fas fa-angle-down"></i>
-                                </span>
+                            <i class="header__search-select-label-icon fas fa-angle-down"></i>
+                        </span>
                         <ul class="header__search-option">
                             <li class="header__search-option-item header__search-option-item--active">
-                                <span>Trong shop</span> 
+                                <span>Trong shop</span>
                                 <i class="fas fa-check"></i>
                             </li>
                             <li class="header__search-option-item">
@@ -169,8 +189,8 @@
                         </ul>
                     </div>
                     <button class="header__search-btn">
-                                <i class="header__search-btn-icon fas fa-search"></i>
-                            </button>
+                        <i class="header__search-btn-icon fas fa-search"></i>
+                    </button>
                 </div>
                 <!-- Cart Layout -->
                 <div class="header__cart">
@@ -181,13 +201,14 @@
                         <div class="header__cart-list">
                             <img src="./assets/css/img/no-cart.jpg" alt="" class="header__cart-list--no-cart-img">
                             <span class="header__cart-list--no-cart-msg">
-                            Chưa có sản phẩm
+                                Chưa có sản phẩm
                             </span>
                             <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
                             <ul class="header__cart-list-item">
                                 <!-- Cart item -->
                                 <li class="header__cart-item">
-                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg" alt="" class="header__cart-img">
+                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg"
+                                        alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
                                             <h5 class="header__cart-item-name">
@@ -208,7 +229,8 @@
                                     </div>
                                 </li>
                                 <li class="header__cart-item">
-                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg" alt="" class="header__cart-img">
+                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg"
+                                        alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
                                             <h5 class="header__cart-item-name">
@@ -229,7 +251,8 @@
                                     </div>
                                 </li>
                                 <li class="header__cart-item">
-                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg" alt="" class="header__cart-img">
+                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg"
+                                        alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
                                             <h5 class="header__cart-item-name">
@@ -250,8 +273,8 @@
                                     </div>
                                 </li>
                                 <li class="header__cart-item">
-                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg" alt=""
-                                        class="header__cart-img">
+                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg"
+                                        alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
                                             <h5 class="header__cart-item-name">
@@ -272,8 +295,8 @@
                                     </div>
                                 </li>
                                 <li class="header__cart-item">
-                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg" alt=""
-                                        class="header__cart-img">
+                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg"
+                                        alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
                                             <h5 class="header__cart-item-name">
@@ -294,8 +317,8 @@
                                     </div>
                                 </li>
                                 <li class="header__cart-item">
-                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg" alt=""
-                                        class="header__cart-img">
+                                    <img src="https://camtuoi.com/wp-content/uploads/2018/03/mua-my-pham-ohui-chinh-hang-o-dau-696x400.jpg"
+                                        alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
                                             <h5 class="header__cart-item-name">
@@ -321,14 +344,29 @@
                     </div>
                 </div>
             </div>
+         
+        </div>
+        <ul class="header__sort-bar">
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Liên quan</a>
+            </li>
+            <li class="header__sort-item header__sort-item__active">
+                <a href="" class="header__sort-link">Mới nhất</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Bán chạy</a>
+            </li>
+            <li class="header__sort-item">
+                <a href="" class="header__sort-link">Giá</a>
+            </li>
+        </ul>
         </header>
-    </div>  
-
+     
 
     <div class="app__container">
-    <div class="grid">
-            <div class="grid__row app__content">
-                <div class="gird__column-2">
+    <div class="grid wide">
+            <div class="row sm-gutter app__content">
+                <div class="col l-2 m-0 c-0">
                     <nav class="category">
                         <h3 class="category__heading">Danh mục</h3>
                         <ul class="category-list">
@@ -345,8 +383,8 @@
                     </nav>
                 </div>
             
-                <div class="gird__column-10">
-                    <div class="home-filter">
+                <div class="col l-10 c-12 m-12">
+                    <div class="home-filter hide-on-mobile-tablet">
                         <span class="home-filter__label">Sắp xếp theo</span>
                         <button class="home-filter__btn btn">Phổ biến</button>
                         <button class="home-filter__btn btn btn--primary">Mới nhất</button>
@@ -385,10 +423,64 @@
                             </div>
                         </div>
                     </div>
+
+                    <nav class="mobile-category">
+                        <ul class="mobile-category__list">
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="" class="mobile-category__link">Dụng cụ và thiết bị tiện ích</a>
+                            </li>
+                        </ul>
+                    </nav>
+
                     <div class="home-product">
                         <!-- Grid -> Row ->Column -->   
-                        <div class="grid__row">
-                            <div class="grid__column-2-4">
+                        <div class="row sm-gutter">
+                            <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis.jpg);">
@@ -426,7 +518,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis10.jpg);">
@@ -464,7 +556,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis2.jpg);">
@@ -502,7 +594,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis3.jpg);">
@@ -540,7 +632,7 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="grid__column-2-4">
+                             <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis4.jpg);">
@@ -578,7 +670,7 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="grid__column-2-4">
+                             <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis5.jpg);">
@@ -616,7 +708,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis6.jpg);">
@@ -654,7 +746,7 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="grid__column-2-4">
+                             <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis7.jpg);">
@@ -692,7 +784,7 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="grid__column-2-4">
+                             <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis8.jpg);">
@@ -730,7 +822,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="grid__column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <!-- Product item -->
                                 <a class="home-product-item">
                                     <div class="home-product-item__img" style="background-image: url(./assets/css/img/img-bitis9.jpg);">
@@ -824,9 +916,9 @@
     </div>
 
     <footer class="footer">
-        <div class="grid">
-            <div class="grid__row">
-                <div class="grid__column-2-4">
+        <div class="grid wide footer__conetent">
+            <div class="row">
+                <div class="col l-2-4 m-4 c-6">
                     <h3 class="footer__heading">Chăm sóc khách hàng
                     </h3>
                     <ul class="footer-list">
@@ -841,7 +933,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                     <h3 class="footer__heading">Về Shopee</h3>
                     <ul class="footer-list">
                         <li class="footer-item">
@@ -855,7 +947,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                     <h3 class="footer__heading">Theo dõi</h3>
                     <ul class="footer-list">
                         <li class="footer-item">
@@ -875,7 +967,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-4 c-6">
                     <h3 class="footer__heading">Danh mục</h3>
                     <ul class="footer-list">
                         <li class="footer-item">
@@ -889,7 +981,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="grid__column-2-4">
+                <div class="col l-2-4 m-8 c-12">
                     <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                     <div class="footer__download">
                         <img src="/assets/css/img/qr_code.png" alt="Download QR" class="footer__download-qr">
@@ -907,12 +999,12 @@
 
         </div>
         <div class="footer__bottom">
-            <div class="grid">
+            <div class="grid wide">
                 <p class="footer__text">@ 2020 - Bản quyển thuộc về Công ty ABC</p>
             </div>
         </div>
-        
     </footer>
+    </div>
     </div>
 
     <!-- Modal Layout -->
